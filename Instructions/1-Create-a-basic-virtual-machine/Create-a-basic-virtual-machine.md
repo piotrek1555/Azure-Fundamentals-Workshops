@@ -121,7 +121,7 @@ In this task, install the Web Server role on the server on the Virtual Machine y
 
 1. In the virtual machine, launch PowerShell by searching **PowerShell** in the search bar, when found right click **Windows PowerShell** to **Run as administrator**.
 
- ![powershell](/assets/powershell.PNG)
+ ![powershell](/assets/powershell.png)
 
  2. In PowerShell, install the **Web-Server** feature on the virtual machine by running the following command. 
 
@@ -131,7 +131,7 @@ In this task, install the Web Server role on the server on the Virtual Machine y
   
 3. When completed, a prompt will state **Success** with a value **True**. You do not need to restart the virtual machine to complete the installation. Close the RDP connection to the VM by clicking the **x** on the blue bar at the top center of your virtual machine. 
 
-    ![install-windows-feature](/assets/install-windows-feature.PNG)
+    ![install-windows-feature](/assets/install-windows-feature.png)
 
 4. Back in the portal, navigate back to the **Overview** blade of `az-fun-win-vm` and, use the **Click to clipboard** button to copy the public IP address of `az-fun-win-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
