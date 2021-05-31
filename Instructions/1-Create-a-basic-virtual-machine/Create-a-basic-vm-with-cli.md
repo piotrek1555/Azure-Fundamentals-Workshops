@@ -45,14 +45,6 @@ az vm create \
 
 **Note**: The command will take 2 to 3 minutes to complete. The command will create a virtual machine and various resources associated with it such as storage, networking and security resources. Do not continue to the next step until the virtual machine deployment is complete. 
 
-```sh
-#Open RDP for remote access, it may already be open
-az vm open-port \
-    --resource-group "az-fun-vm-rg" \
-    --name "win-cli-vm" \
-    --port "3389"
-```
-
 5. When the command finishes running, in the browser window, close the Cloud Shell pane.
 
 6. In the Azure portal, search for **Virtual machines** and verify that **win-cli-vm** is running.
