@@ -35,7 +35,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     **You can use the following values:**
     | Settings             | Values                   |
     | -------------------- | ------------------------ |
-    | Virtual machine name | **az-fun-win-vm**          |
+    | Virtual machine name | **win-portal-vm**          |
     | Region               | **(Europe) West Europe** |
 
     ###### Availability options
@@ -96,7 +96,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
 # Task 2: Connect to the virtual machine
 In this task, we will connect to our new virtual machine using RDP (Remote Desktop Protocol).
 
-1. Search for `az-fun-win-vm` (or other name that you used during the creation of vm) and select your newly created virtual machine.
+1. Search for `win-portal-vm` (or other name that you used during the creation of vm) and select your newly created virtual machine.
 
 >You could also use the `Go to resource` link on the deployment page or the link to the resource in the `Notifications` area.
 
@@ -133,7 +133,7 @@ In this task, install the Web Server role on the server on the Virtual Machine y
 
     ![install-windows-feature](/assets/install-windows-feature.png)
 
-4. Back in the portal, navigate back to the **Overview** blade of `az-fun-win-vm` and, use the **Click to clipboard** button to copy the public IP address of `az-fun-win-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
+4. Back in the portal, navigate back to the **Overview** blade of `win-portal-vm` and, use the **Click to clipboard** button to copy the public IP address of `win-portal-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
     ![copy-ip-address](/assets/copy-ip-address.PNG)
 
