@@ -106,7 +106,7 @@ In this task, we will connect to our new virtual machine using RDP (Remote Deskt
 3. On the `Connect to virtual machine` page, keep the default options to connect with the public IP address over port 3389 and click `Download RDP File`.
 
 4. `Open` the downloaded RDP file (located on the bottom left of your lab machine) and click `Connect` when prompted.
-![rdp-prompt](/assets/rdp-prompt.png)
+![rdp-prompt](/assets/rdp-prompt.PNG)
 
 5. On the `Windows Security` window select `More choices`, then select `Use a different account`
  and sign in using the Admin Credentials you used when creating your VM `azureuser` and the password `Pa$$w0rd1234`.
@@ -121,7 +121,7 @@ In this task, install the Web Server role on the server on the Virtual Machine y
 
 1. In the virtual machine, launch PowerShell by searching **PowerShell** in the search bar, when found right click **Windows PowerShell** to **Run as administrator**.
 
- ![powershell](/assets/powershell.png)
+ ![powershell](/assets/powershell.PNG)
 
  2. In PowerShell, install the **Web-Server** feature on the virtual machine by running the following command. 
 
@@ -131,15 +131,15 @@ In this task, install the Web Server role on the server on the Virtual Machine y
   
 3. When completed, a prompt will state **Success** with a value **True**. You do not need to restart the virtual machine to complete the installation. Close the RDP connection to the VM by clicking the **x** on the blue bar at the top center of your virtual machine. 
 
-    ![install-windows-feature](/assets/install-windows-feature.png)
+    ![install-windows-feature](/assets/install-windows-feature.PNG)
 
 4. Back in the portal, navigate back to the **Overview** blade of `az-fun-win-vm` and, use the **Click to clipboard** button to copy the public IP address of `az-fun-win-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
-    ![copy-ip-address](/assets/copy-ip-address.png)
+    ![copy-ip-address](/assets/copy-ip-address.PNG)
 
 5. The default IIS Web Server welcome page will be displayed.
 
-    ![default-iis-webpage](/assets/default-iis-webpage.png)
+    ![default-iis-webpage](/assets/default-iis-webpage.PNG)
 
 **Congratulations!** You have created a new VM running a web server that is accessible via its public IP address. If you had a web application to host, you could deploy application files to the virtual machine and host them for public access on the deployed virtual machine.
 
