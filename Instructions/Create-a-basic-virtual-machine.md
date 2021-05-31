@@ -35,7 +35,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
     **You can use the following values:**
     | Settings             | Values                   |
     | -------------------- | ------------------------ |
-    | Virtual machine name | **demo-win-vm**          |
+    | Virtual machine name | **az-fun-win-vm**          |
     | Region               | **(Europe) West Europe** |
 
     ###### Availability options
@@ -83,7 +83,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
 
     In default configuration, this virtual machine will get a `public IP address` for accessing this VM over the internet, but by default access from outside the virtual network or the internet is not permitted. Adding inbound port rules here is an easy way for us to permit network access into this virtual machine by specifying which inbound ports we want to open up. Selecting an inbound port here will add a rule to the `network security group`, permitting access from any IP address on the specified port. 
 
-    Since this is a Windows virtual machine and we want to access it remotely, we will open up RDP on port 3389. This will allow RDP access into this virtual machine on that port from any IP address.
+    Since this is a Windows virtual machine and we want to access it remotely, we will open up RDP on port 3389. This will allow RDP access into this virtual machine on that port from any IP address, and also we will open port 80 for HTTP, it will allow us to browse from browser by our IP Address.
   
 
 4. Leave the remaining values on the defaults and then click the Review + create button at the bottom of the page.
@@ -91,3 +91,57 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
 5. Once Validation is passed click the Create button. It can take anywhere from five to seven minutes to deploy the virtual machine.
 
 6. You will receive updates on the deployment page and via the Notifications area (the bell icon in the top menu bar).
+
+
+# Task 2: Connect to the virtual machine
+In this task, we will connect to our new virtual machine using RDP (Remote Desktop Protocol).
+
+1. Search for `az-fun-win-vm` (or other name that you used during the creation of vm) and select your newly created virtual machine.
+
+>You could also use the `Go to resource` link on the deployment page or the link to the resource in the `Notifications` area.
+
+2. On the virtual machine Overview blade, click `Connect` button and choose `RDP` from the drop down.
+![vm-connect](/assets/vm-connect.jpeg)
+
+3. On the `Connect to virtual machine` page, keep the default options to connect with the public IP address over port 3389 and click `Download RDP File`.
+
+4. `Open` the downloaded RDP file (located on the bottom left of your lab machine) and click `Connect` when prompted.
+![rdp-prompt](/assets/rdp-prompt.png)
+
+5. On the `Windows Security` window select `More choices`, then select `Use a different account`
+ and sign in using the Admin Credentials you used when creating your VM `azureuser` and the password `Pa$$w0rd1234`.
+ ![enter-your-credential-prompt](/assets/enter-your-credential-prompt.PNG)
+
+**Congratulations!** You have deployed and connected to a Virtual Machine running Windows Server.
+
+
+# Task 3: Install the web server role and test
+
+In this task, install the Web Server role on the server on the Virtual Machine you just created and ensure the default IIS welcome page will be displayed.
+
+1. In the virtual machine, launch PowerShell by searching **PowerShell** in the search bar, when found right click **Windows PowerShell** to **Run as administrator**.
+
+ ![powershell](/assets/powershell.png)
+
+ 2. In PowerShell, install the **Web-Server** feature on the virtual machine by running the following command. 
+
+    ```PowerShell
+    Install-WindowsFeature -name Web-Server -IncludeManagementTools
+    ```
+  
+3. When completed, a prompt will state **Success** with a value **True**. You do not need to restart the virtual machine to complete the installation. Close the RDP connection to the VM by clicking the **x** on the blue bar at the top center of your virtual machine. 
+
+    ![install-windows-feature](/assets/install-windows-feature.png)
+
+4. Back in the portal, navigate back to the **Overview** blade of `az-fun-win-vm` and, use the **Click to clipboard** button to copy the public IP address of `az-fun-win-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
+
+    ![copy-ip-address](/assets/copy-ip-address.png)
+
+5. The default IIS Web Server welcome page will be displayed.
+
+    ![default-iis-webpage](/assets/default-iis-webpage.png)
+
+**Congratulations!** You have created a new VM running a web server that is accessible via its public IP address. If you had a web application to host, you could deploy application files to the virtual machine and host them for public access on the deployed virtual machine.
+
+
+**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see verify that the deletion completed successfully. 
