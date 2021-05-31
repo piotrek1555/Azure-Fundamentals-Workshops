@@ -12,6 +12,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
   
     ##### Project details
     ![project-details](/assets/projectdetails.PNG)
+    
     On this first section, you will assign your virtual machine to a `subscription` and to a `resource group`. If the resource group doesn't exist, you can create one.
     
     **You can use the following values:**
@@ -20,16 +21,17 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
     | Subscription        | **select your subscription** |
     | Resource group name | **az-fun-vm-rg**             |
 
-   > At the top of the page here, you can see that there are additional sections for disk, networking, management and so on. These sections gives You the ability to create more custom configurations, such as adding additional disks or adding the virtual machine to an existing virtual network or even creating more granular network security rules.
+    > At the top of the page, you can see that there are additional sections for `Disk`, `Networking`, `Management` and so on. These sections gives you the ability to create more custom configurations, such as adding additional disks or adding the virtual machine to an existing virtual network, and so on.
 
-   >In this demo we're going to focus on the elements to create a basic virtual machine
+    > But in this demo we're going to focus on the elements to create a basic virtual machine
 
-    - the next section that we will define is `Instance details` 
+    The next section that we will define is `Instance details` 
 
     ##### Instance details 
     ![instance-details](/assets/instance-details.PNG)
     
     Here you will give the virtual machine a `name` and pick a `region` that you want to deploy the virtual machine in.
+
     **You can use the following values:**
     | Settings             | Values                   |
     | -------------------- | ------------------------ |
@@ -37,10 +39,14 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
     | Region               | **(Europe) West Europe** |
 
     ###### Availability options
-    The next and optional, you can specify any `availability options`, so things like `availability zones` or `availability sets` can be chosen here. Leave it as default for now.
+    The next and optional, you can specify any `availability options`, so things like `availability zones` or `availability sets` can be chosen here. Leave it as default for now - `No infrastructure redundancy required`.
 
     ###### Virtual Machine Image
     Then you'll select a `virtual machine image` from the list of images available in the selected region. We are going to pick a `Windows Server 2019 Datacenter - Gen1` image for this demo purpose.
+
+    | Settings              | Values                                    |
+    | --------------------- | ----------------------------------------- |
+    | Virtual machine image | **Windows Server 2019 Datacenter - Gen1** |
 
     ###### Azure Spot instance
     Leave `Azure Spot instance` unchecked. That's a setting that allows Azure to stop and deallocate a virtual machine if Azure needs that compute capacity back for whatever reason.
@@ -48,8 +54,8 @@ In this walkthrough, we will create a virtual machine in the Azure portal and th
     ###### Size
     And lastly in this section, for `size` pick a smaller virtual machine size from the list of VM sizes available for selected region, since you don't need a ton of capacity for this demo purpose.
     **You can use the following values:**
-    | Settings             | Values               |
-    | -------------------- | -------------------- |
+    | Settings             | Values                   |
+    | -------------------- | ------------------------ |
     | Virtual machine name | **demo-win-vm**          |
     | Region               | **(Europe) West Europe** |
 
