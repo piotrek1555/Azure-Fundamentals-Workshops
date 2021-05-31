@@ -2,7 +2,7 @@
 
 In this walk-through, we will configure the Cloud Shell, use Azure CLI to create a resource group, virtual machine, and we will run some commands to manage the vm, after all you will connect to remote desktop.
 
-# Task 1: Configure the Cloud Shell (10 min)
+# Task 1: Configure the Cloud Shell
 
 In this task, we will configure Cloud Shell, then use Azure CLI to create a resource group and a virtual machine.  
 
