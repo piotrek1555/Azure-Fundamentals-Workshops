@@ -91,15 +91,35 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
         --output "table" 
     ```
 
-6. To start your machine type following command
-   
+6. Deallocate the virtual machine. 
+
     ```sh
-    az vm stop \
+    # deallocate the virtual machine
+    az vm deallocate \
         --resource-group "az-fun-vm-cli-rg" \
         --name "win-cli-vm"
     ```
 
-7. Open the RDP port
+7. Verify your virtual machine status. The PowerState should now be **Stopped (deallocated)**.
+
+    ```sh
+    # Retrieve information about the virtual machine
+    az vm show \
+        --resource-group "az-fun-vm-cli-rg" \
+        --name "win-cli-vm" \
+        --show-details \
+        --output "table"
+    ```
+
+8. To start your machine type following command
+   
+    ```sh
+    az vm start \
+        --resource-group "az-fun-vm-cli-rg" \
+        --name "win-cli-vm"
+    ```
+
+9. Open the RDP port
     
     ```sh
     #Open RDP for remote access, it may already be open
