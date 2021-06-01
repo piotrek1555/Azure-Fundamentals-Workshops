@@ -35,7 +35,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     **You can use the following values:**
     | Settings             | Values                   |
     | -------------------- | ------------------------ |
-    | Virtual machine name | **win-portal-vm**          |
+    | Virtual machine name | **win-portal-vm**        |
     | Region               | **(Europe) West Europe** |
 
     ###### Availability options
@@ -54,10 +54,9 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     ###### Size
     And lastly in this section, for `size` pick a smaller virtual machine size from the list of VM sizes available for selected region, since you don't need a ton of capacity for this demo purpose.
     **You can use the following values:**
-    | Settings             | Values                   |
-    | -------------------- | ------------------------ |
-    | Virtual machine name | **demo-win-vm**          |
-    | Region               | **(Europe) West Europe** |
+    | Settings | Values           |
+    | -------- | ---------------- |
+    | Size     | **Standard_B1s** |
 
     the next section that you will define is `administrator account` 
 
