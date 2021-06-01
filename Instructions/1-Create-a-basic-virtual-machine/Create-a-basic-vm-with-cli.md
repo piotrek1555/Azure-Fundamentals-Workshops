@@ -29,14 +29,14 @@ In Cloud Shell enter the command below and make sure that each line, except for 
 ```sh
 # Create a resource group if needed.
 az group create \
-    --name "az-fun-vm-rg" \
+    --name "az-fun-vm-cli-rg" \
     --location "westeurope"
 ```
 
 ```sh
 #Creating a Windows Virtual Machine
 az vm create \
-    --resource-group "az-fun-vm-rg" \
+    --resource-group "az-fun-vm-cli-rg" \
     --name "win-cli-vm" \
     --image "win2019datacenter" \
     --admin-username "azureuser" \
@@ -65,7 +65,7 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
     ```sh
     # Retrieve information about the virtual machine
     az vm show \
-        --resource-group "az-fun-vm-rg" \
+        --resource-group "az-fun-vm-cli-rg" \
         --name "win-cli-vm" \
         --show-details \
         --output "table" 
@@ -76,7 +76,7 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
     ```sh
     # Stop the virtual machine
     az vm stop \
-        --resource-group "az-fun-vm-rg" \
+        --resource-group "az-fun-vm-cli-rg" \
         --name "win-cli-vm"
     ```
 
@@ -85,7 +85,7 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
     ```sh
     # Retrieve information about the virtual machine
     az vm show \
-        --resource-group "az-fun-vm-rg" \
+        --resource-group "az-fun-vm-cli-rg" \
         --name "win-cli-vm" \
         --show-details \
         --output "table" 
@@ -95,7 +95,7 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
    
     ```sh
     az vm stop \
-        --resource-group "az-fun-vm-rg" \
+        --resource-group "az-fun-vm-cli-rg" \
         --name "win-cli-vm"
     ```
 
@@ -104,7 +104,7 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
     ```sh
     #Open RDP for remote access, it may already be open
     az vm open-port \
-        --resource-group "az-fun-vm-rg" \
+        --resource-group "az-fun-vm-cli-rg" \
         --name "win-cli-vm" \
         --port "3389"
     ```
@@ -131,6 +131,6 @@ In this task, we will connect to our new virtual machine using RDP (Remote Deskt
 
 **Congratulations!** You have configured Cloud Shell, created a virtual machine using Azure CLI, practiced with Azure CLI commands, and connected to a Virtual Machine running Windows Server.
 
->**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click Delete resource group. Verify the name of the resource group and then click Delete. Monitor the Notifications to see how the delete is proceeding. You can do it also with cli `az group delete --name "az-fun-vm-rg"`
+>**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click Delete resource group. Verify the name of the resource group and then click Delete. Monitor the Notifications to see how the delete is proceeding. You can do it also with cli `az group delete --name "az-fun-vm-cli-rg"`
 
 
