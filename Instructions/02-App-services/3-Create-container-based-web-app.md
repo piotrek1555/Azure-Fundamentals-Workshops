@@ -51,30 +51,30 @@ In this task, we will test the web app.
 
 3. On the **Overview** blade, locate the **URL**. Copy the URL to the clipboard.
 
-    ![docker-webapp-overview](../assets/docker-webapp-overview.PNG)
+    ![docker-webapp-overview](/assets/docker-webapp-overview.PNG)
 
 4. In a new browser window, paste the URl and press enter. The Welcome to Azure Container Instances! welcome message will be displayed.
 
-    ![browse-the-docker-webapp](../assets/browse-the-docker-webapp.PNG)
+    ![browse-the-docker-webapp](/assets/browse-the-docker-webapp.PNG)
 
 5. Repeat step 4 a few times, and switch back to the **Overview** blade of your web app and scroll down. You will notice several charts tracking Data In/Out and Requests. You should be able to see corresponding telemetry being displayed in these charts. This includes number of requests and average response time.
 
 # Task 3: Explore the App Service Plan Features
 
 1. On the **Overview** page, there are some charts with metrics.
-    ![app-service-plan-overview](../assets/app-service-plan-overview.PNG)
+    ![app-service-plan-overview](/assets/app-service-plan-overview.PNG)
 
 2. Go to `Settings` section on the left pane, and select `Apps`
     We can see that there's one App Service that we have already deployed. What's interesting is that you can't create App Services from here.
-    ![app-service-plan-apps](../assets/app-service-plan-apps.PNG)
+    ![app-service-plan-apps](/assets/app-service-plan-apps.PNG)
 
 3. Go to `File system storage` 
     Here you can see how much storage is being used on this plan. Whenever you upload a code, the storage is used. It is actually stored outside the virtual machine on a shared drive in Azure Storage. But there is a quota on the total storage for those files, and it depends on the pricing tier you choose for your App Service plan. For this Free plan, it's 1 GB total for all the App Services. On the Standard tier it goes to 50 GB, and on the Premium tier it is 250 GB.
-    ![app-service-plan-file-system-storage](../assets/app-service-plan-file-system-storage.PNG)
+    ![app-service-plan-file-system-storage](/assets/app-service-plan-file-system-storage.PNG)
 
 5. Go to `Scale up (App Service plan`
     It is the menu, where you can change the pricing tier. You can start small, and if You find your App Services are using a lot of resources, you could scale up the size of the underlying virtual machines. And if You think you don't need the resources you have allocated, you can also scale down. But you need to make sure all the features you are using, are supported in the lower price tier. 
-    ![app-service-plan-scale-up-menu.PNG](../assets/app-service-plan-scale-up-menu.PNG)
+    ![app-service-plan-scale-up-menu.PNG](/assets/app-service-plan-scale-up-menu.PNG)
 
 6. Go to `Scale out (App Service plan)` menu
     
