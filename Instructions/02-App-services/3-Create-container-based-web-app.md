@@ -19,7 +19,7 @@ In this task, you will create an Azure App Service Web App.
     | ---------------- | ------------------------ | ----------------------------------------------------------- |
     | Subscription     | **Use default supplied** |                                                             |
     | Resource Group   | **az-fun-web-rg**        | Create a new one                                            |
-    | Name             | **az-docker-web-xxxx**   | Name must be unique across all Azure subscriptions          |
+    | Name             | **az-fun-docker-web-xxxx**   | Name must be unique across all Azure subscriptions          |
     | Publish          | **Docker Container**     |                                                             |
     | Operating System | **Linux**                | We will deploy docker image for Linux OS based app          |
     | Region           | **West Europe**          |                                                             |
