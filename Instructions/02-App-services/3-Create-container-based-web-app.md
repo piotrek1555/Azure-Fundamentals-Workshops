@@ -74,6 +74,7 @@ In this task, we will test the web app.
 
 5. Go to `Scale up (App Service plan`
     It is the menu, where you can change the pricing tier. You can start small, and if You find your App Services are using a lot of resources, you could scale up the size of the underlying virtual machines. And if You think you don't need the resources you have allocated, you can also scale down. But you need to make sure all the features you are using, are supported in the lower price tier. 
+    ![app-service-plan-scale-up-menu.PNG](/assets/app-service-plan-scale-up-menu.PNG)
 
 6. Go to `Scale out (App Service plan)` menu
     
