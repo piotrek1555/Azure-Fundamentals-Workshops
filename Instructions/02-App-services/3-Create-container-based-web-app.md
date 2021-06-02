@@ -15,16 +15,16 @@ In this task, you will create an Azure App Service Web App.
 
 3. On the **Basics** tab of the **Create Web App** blade, specify the following settings (replace **xxxx** in the name of the web app with letters and digits such that the name is globally unique). Leave the defaults for everything else. 
 
-    | Setting          | Value                      | Comments                                                                |
-    | ---------------- | -------------------------- | ----------------------------------------------------------------------- |
-    | Subscription     | **Use default supplied**   |                                                                         |
-    | Resource Group   | **az-fun-web-rg**          | Create a new one                                                        |
-    | Name             | **az-fun-docker-web-xxxx** | Name must be unique across all Azure subscriptions                      |
-    | Publish          | **Docker Container**       |                                                                         |
-    | Operating System | **Linux**                  | We will deploy docker image for Linux OS based app                      |
-    | Region           | **West Europe**            |                                                                         |
-    | Linux Plan       | **az-fun-linux-asp**       | Create new plan, name must be unique in your subscription               |
-    | Sku and size     | **Standard S1**            | It is paid version, but it has features, that we will talk about later |
+    | Setting          | Value                      | Comments                                                  |
+    | ---------------- | -------------------------- | --------------------------------------------------------- |
+    | Subscription     | **Use default supplied**   |                                                           |
+    | Resource Group   | **az-fun-web-rg**          | Create a new one                                          |
+    | Name             | **az-fun-docker-web-xxxx** | Name must be unique across all Azure subscriptions        |
+    | Publish          | **Docker Container**       |                                                           |
+    | Operating System | **Linux**                  | We will deploy docker image for Linux OS based app        |
+    | Region           | **West Europe**            |                                                           |
+    | Linux Plan       | **az-fun-linux-asp**       | Create new plan, name must be unique in your subscription |
+    | Sku and size     | **Free**                   | We will scale up it later                                 |
     
     >**Note** - Remember to change the **xxxx** so that your Web App name is unique.
 
