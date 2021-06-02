@@ -10,7 +10,7 @@ In this task, we will configure Cloud Shell, then use Azure CLI to create a reso
 
 2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
 
-    ![cloud-shell](/assets/cloud-shell.PNG)
+    ![cloud-shell](../assets/cloud-shell.PNG)
    
 3. In the Welcome to Azure Cloud Shell dialog, when prompted to select either **Bash** or **PowerShell**, select **Bash**. 
 
@@ -49,7 +49,7 @@ az vm create \
 
 6. In the Azure portal, search for **Virtual machines** and verify that **win-cli-vm** is running.
 
-    ![vm-status](/assets/vm-status.PNG)
+    ![vm-status](../assets/vm-status.PNG)
 
 
 # Task 3: Execute commmands in the Cloud Shell
@@ -138,16 +138,16 @@ In this task, we will connect to our new virtual machine using RDP (Remote Deskt
 >You could also use the `Go to resource` link on the deployment page or the link to the resource in the `Notifications` area.
 
 2. On the virtual machine Overview blade, click `Connect` button and choose `RDP` from the drop down.
-![vm-connect](/assets/vm-connect.jpeg)
+![vm-connect](../assets/vm-connect.jpeg)
 
 3. On the `Connect to virtual machine` page, keep the default options to connect with the public IP address over port 3389 and click `Download RDP File`.
 
 4. `Open` the downloaded RDP file (located on the bottom left of your lab machine) and click `Connect` when prompted.
-![rdp-prompt](/assets/rdp-prompt.PNG)
+![rdp-prompt](../assets/rdp-prompt.PNG)
 
 5. On the `Windows Security` window select `More choices`, then select `Use a different account`
  and sign in using the Admin Credentials you used when creating your VM `azureuser` and the password `Pa$$w0rd1234`.
- ![enter-your-credential-prompt](/assets/enter-your-credential-prompt.PNG)
+ ![enter-your-credential-prompt](../assets/enter-your-credential-prompt.PNG)
 
 **Congratulations!** You have configured Cloud Shell, created a virtual machine using Azure CLI, practiced with Azure CLI commands, and connected to a Virtual Machine running Windows Server.
 

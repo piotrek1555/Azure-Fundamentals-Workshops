@@ -11,7 +11,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
 3. On the `Basics` tab, fill in the following information (leave the defaults for everything else):
   
     ##### Project details
-    ![project-details](/assets/projectdetails.PNG)
+    ![project-details](../assets/projectdetails.PNG)
     
     On this first section, you will assign your virtual machine to a `subscription` and to a `resource group`. If the resource group doesn't exist, you can create one.
     
@@ -28,7 +28,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     The next section that we will define is `Instance details` 
 
     ##### Instance details 
-    ![instance-details](/assets/instance-details.PNG)
+    ![instance-details](../assets/instance-details.PNG)
     
     Here you will give the virtual machine a `name` and pick a `region` that you want to deploy the virtual machine in.
 
@@ -61,7 +61,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     the next section that you will define is `administrator account` 
 
     ##### Administrator account
-    ![administrator-account](/assets/administrator-account.PNG)
+    ![administrator-account](../assets/administrator-account.PNG)
 
     Here you will define required information for administrative access to the virtual machine. For Windows, this is a `username` and `password`, and on Linux it can be a suername or password or also an SSH public key. We are going to focus on Windows for this demo.
 
@@ -76,7 +76,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     The next section to cover is `inbound-port-rule`
 
     ##### Inbound port rules
-    ![inbound-port-rule](/assets/inbound-port-rule.PNG)
+    ![inbound-port-rule](../assets/inbound-port-rule.PNG)
 
     You will need to define some `inbound port rules` for accessing this virtual machine. 
 
@@ -100,16 +100,16 @@ In this task, we will connect to our new virtual machine using RDP (Remote Deskt
 >You could also use the `Go to resource` link on the deployment page or the link to the resource in the `Notifications` area.
 
 2. On the virtual machine Overview blade, click `Connect` button and choose `RDP` from the drop down.
-![vm-connect](/assets/vm-connect.jpeg)
+![vm-connect](../assets/vm-connect.jpeg)
 
 3. On the `Connect to virtual machine` page, keep the default options to connect with the public IP address over port 3389 and click `Download RDP File`.
 
 4. `Open` the downloaded RDP file (located on the bottom left of your lab machine) and click `Connect` when prompted.
-![rdp-prompt](/assets/rdp-prompt.PNG)
+![rdp-prompt](../assets/rdp-prompt.PNG)
 
 5. On the `Windows Security` window select `More choices`, then select `Use a different account`
  and sign in using the Admin Credentials you used when creating your VM `azureuser` and the password `Pa$$w0rd1234`.
- ![enter-your-credential-prompt](/assets/enter-your-credential-prompt.PNG)
+ ![enter-your-credential-prompt](../assets/enter-your-credential-prompt.PNG)
 
 **Congratulations!** You have deployed and connected to a Virtual Machine running Windows Server.
 
@@ -120,7 +120,7 @@ In this task, install the Web Server role on the server on the Virtual Machine y
 
 1. In the virtual machine, launch PowerShell by searching **PowerShell** in the search bar, when found right click **Windows PowerShell** to **Run as administrator**.
 
- ![powershell](/assets/powershell.png)
+ ![powershell](../assets/powershell.png)
 
  2. In PowerShell, install the **Web-Server** feature on the virtual machine by running the following command. 
 
@@ -130,15 +130,15 @@ In this task, install the Web Server role on the server on the Virtual Machine y
   
 3. When completed, a prompt will state **Success** with a value **True**. You do not need to restart the virtual machine to complete the installation. Close the RDP connection to the VM by clicking the **x** on the blue bar at the top center of your virtual machine. 
 
-    ![install-windows-feature](/assets/install-windows-feature.png)
+    ![install-windows-feature](../assets/install-windows-feature.png)
 
 4. Back in the portal, navigate back to the **Overview** blade of `win-portal-vm` and, use the **Click to clipboard** button to copy the public IP address of `win-portal-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
-    ![copy-ip-address](/assets/copy-ip-address.PNG)
+    ![copy-ip-address](../assets/copy-ip-address.PNG)
 
 5. The default IIS Web Server welcome page will be displayed.
 
-    ![default-iis-webpage](/assets/default-iis-webpage.PNG)
+    ![default-iis-webpage](../assets/default-iis-webpage.PNG)
 
 **Congratulations!** You have created a new VM running a web server that is accessible via its public IP address. If you had a web application to host, you could deploy application files to the virtual machine and host them for public access on the deployed virtual machine.
 
