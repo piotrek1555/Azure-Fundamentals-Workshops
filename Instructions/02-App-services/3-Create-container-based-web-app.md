@@ -26,7 +26,7 @@ In this task, you will create an Azure App Service Web App.
     | Linux Plan       | **az-fun-linux-asp**     | Create new plan, name must be unique in your subscription   |
     | Sku and size     | **Free**                 | Later on we will scale up our plan to give it more features |
     
-    **Note** - Remember to change the **xxxx** so that your Web App name is unique.
+    >**Note** - Remember to change the **xxxx** so that your Web App name is unique.
 
 4. Click **Next > Docker** and configure the container information.  
 
@@ -37,7 +37,7 @@ In this task, you will create an Azure App Service Web App.
     | Access Type   | **Public**                   |
     | Image and tag | **microsoft/aci-helloworld** |
     
- **Note** The startup command is optional and not needed in this exercise.
+ >**Note** The startup command is optional and not needed in this exercise.
 
 5. Click **Review + create**, and then click **Create**. 
 
@@ -57,7 +57,7 @@ In this task, we will test the web app.
 
     ![browse-the-docker-webapp](/assets/browse-the-docker-webapp.PNG)
 
-5. Switch back to the **Overview** blade of your web app and scroll down. You will notice several charts tracking Data In/Out and Requests. If you repeat step 4 a few times, you should be able to see corresponding telemetry being displayed in these charts. This includes number of requests and average response time.
+5. Repeat step 4 a few times, and switch back to the **Overview** blade of your web app and scroll down. You will notice several charts tracking Data In/Out and Requests. You should be able to see corresponding telemetry being displayed in these charts. This includes number of requests and average response time.
 
 # Task 3: Explore the App Service Plan Features
 
@@ -65,11 +65,20 @@ In this task, we will test the web app.
     ![app-service-plan-overview](/assets/app-service-plan-overview.PNG)
 
 2. Go to `Settings` section on the left pane, and select `Apps`
-    We can see that there's one App Service that we have already deployed
-    What's intresting is that you can't create App Services from here. You choose the App Service plan when you create an App Service, you will see that later in the next labs.
+    We can see that there's one App Service that we have already deployed. What's interesting is that you can't create App Services from here.
     ![app-service-plan-apps](/assets/app-service-plan-apps.PNG)
 
+3. Go to `File system storage` 
+    Here you can see how much storage is being used on this plan. Whenever you upload a code, the storage is used. It is actually stored outside the virtual machine on a shared drive in Azure Storage. But there is a quota on the total storage for those files, and it depends on the pricing tier you choose for your App Service plan. For this Free plan, it's 1 GB total for all the App Services. On the Standard tier it goes to 50 GB, and on the Premium tier it is 250 GB.
+    ![app-service-plan-file-system-storage](/assets/app-service-plan-file-system-storage.PNG)
 
-**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
+5. Go to `Scale up (App Service plan`
+    It is the menu, where you can change the pricing tier. You can start small, and if You find your App Services are using a lot of resources, you could scale up the size of the underlying virtual machines. And if You think you don't need the resources you have allocated, you can also scale down. But you need to make sure all the features you are using, are supported in the lower price tier. 
+
+6. Go to `Scale out (App Service plan)` menu
+    
+
+
+>**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
 
 Congratultions you successfully created an Azure Container Instance.
