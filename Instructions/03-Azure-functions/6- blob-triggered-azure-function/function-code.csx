@@ -6,9 +6,9 @@ using SixLabors.ImageSharp.Formats;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
-public static void Run(Stream myBlob, string name, Stream imageMedium, Stream imageSmall, Stream imageExtraSmall, ILogger log)
+public static void Run(Stream myBlob, string name, Stream imageExtraSmall, Stream imageSmall, Stream imageMedium, ILogger log)
 {
-    log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {image.Length} Bytes");
+    log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
 
     IImageFormat format;
 
@@ -17,13 +17,13 @@ public static void Run(Stream myBlob, string name, Stream imageMedium, Stream im
         ResizeImage(input, imageSmall, ImageSize.Small, format);
     }
 
-    image.Position = 0;
+    myBlob.Position = 0;
     using (Image<Rgba32> input = Image.Load<Rgba32>(myBlob, out format))
     {
         ResizeImage(input, imageMedium, ImageSize.Medium, format);
     }
 
-    image.Position = 0;
+    myBlob.Position = 0;
     using (Image<Rgba32> input = Image.Load<Rgba32>(myBlob, out format))
     {
         ResizeImage(input, imageExtraSmall, ImageSize.ExtraSmall, format);
