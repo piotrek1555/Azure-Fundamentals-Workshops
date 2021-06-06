@@ -106,7 +106,7 @@ In this task, we will implement the resize functionality, we will add 3 **output
     | Path                       | **medium/md-{name}**    |
     | Storage account connection | **AzureWebJobsStorage** |
 
-2. To make it possible to resize images, we need to use external library `SixLabors.ImageResize`, you can add it by uploading the `function.proj` file to the Function. Navigate to **Code + test** tab, hit upload button, and search in instruction for this exercise file `function.proj`
+2. To make it possible to resize images, we need to use external library, for example the `SixLabors.ImageResize`, you can add it by uploading the `function.proj` file to the Function. Navigate to **Code + test** tab, hit upload button, and search in instruction for this exercise file `function.proj`
     ![function-app-upload-function-proj-file](/assets/function-app-upload-function-proj-file.PNG)
 
 3. Switch to `function.proj` file, by expanding the dropdown list in the bradcrumbs 
@@ -129,7 +129,7 @@ In this task, we will implement the resize functionality, we will add 3 **output
    You should see in **Logs**, that the function respond to the changes, and restore the necessary packages for your application
    ![function-app-saved-proj](/assets/function-app-saved-proj.PNG)
 
-5. Switch to `run.csx` file, add resize functionality by pasting the following code into code window, and hit **Save**.
+5. Switch to `run.csx` file, add resize functionality by pasting the following code into function editor, and hit **Save**.
 
     ```cs
     using System.Collections.Generic;
