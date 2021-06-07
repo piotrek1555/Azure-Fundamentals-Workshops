@@ -36,7 +36,7 @@ In this task, we will create a SQL database.
 
 In this task, we will configure the SQL server and run a SQL query. 
 
-1. When the deployment has completed, click Go to resource from the deployment blade. Alternatively, from the **All Resources** blade, search and select **Databases**, then **SQL databases** ensure your new database was created. You may need to **Refresh** the page.
+1. When the deployment has completed, click **Go to resource** from the deployment blade. Alternatively, from the **All Resources** blade, search and select **Databases**, then **SQL databases** ensure your new database was created. You may need to **Refresh** the page.
 
     ![sql-database-server-created](/assets/sql-database-server-created.PNG)
 
