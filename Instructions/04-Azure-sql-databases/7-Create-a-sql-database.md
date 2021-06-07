@@ -4,7 +4,7 @@ In this walkthrough, we will create a SQL database in Azure and then query the d
 
 # Task 1: Create the database
 
-In this task, we will create a SQL database based on the AdventureWorksLT sample database. 
+In this task, we will create a SQL database. 
 
 1. Sign in to the Azure portal at [**https://portal.azure.com**](https://portal.azure.com).
 
