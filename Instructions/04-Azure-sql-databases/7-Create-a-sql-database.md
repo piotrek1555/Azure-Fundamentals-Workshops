@@ -15,7 +15,7 @@ In this task, we will create a SQL database based on the AdventureWorksLT sample
     | Setting            | Value                                                        |
     | ------------------ | ------------------------------------------------------------ |
     | Subscription       | **Use default supplied**                                     |
-    | Resource group     | **az-fun-sql-rg**                                |
+    | Resource group     | **az-fun-sql-rg**                                            |
     | Database name      | **az-fun-sql-db**                                            |
     | Server             | Select **Create new** (A new sidebar will open on the right) |
     | Server name        | **az-fun-sql-srv-xxxx** (must be unique)                     |
@@ -63,8 +63,9 @@ In this task, we will configure the SQL server and run a SQL query.
     - create a Products table code:
         ```SQL
         CREATE TABLE Products (
-          ProductName varchar(255),
-          Price money
+            Id INT IDENTITY(1,1) NOT NULL,
+            ProductName varchar(255),
+            Price money
         )
         ```
       Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
@@ -81,7 +82,7 @@ In this task, we will configure the SQL server and run a SQL query.
         ![sql-database-server-queries](/assets/sql-database-server-queries.PNG)
     - query for data code (paste it below the previous query, select and hit run):
         ```SQL
-        SELECT TOP (1000) * FROM [dbo].[Products]
+        SELECT * FROM [dbo].[Products]
         ```
         ![sql-database-server-select-query](/assets/sql-database-server-select-query.PNG)
 
