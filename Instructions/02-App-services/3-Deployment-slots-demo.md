@@ -103,17 +103,17 @@ In this task you will configure settings for the production slot
 
 2. On the **App Service** blade on the left pane in the **Settings** sections select **Configuration**, and add new application settings and Connection strings as follows:
 
-    | Application Setting     | Value       | Comments                                                                     |
-    | ----------------------- | ----------- | ---------------------------------------------------------------------------- |
-    | Name                    | EnvName     |                                                                              |
-    | Value                   | Production  | We want this setting to be production specific value                         |
-    | Deployment slot setting | **checked** | We want this setting to not be overridden when we swap with the staging slot |
+    | Application Setting     | Value       | Comments                                                                   |
+    | ----------------------- | ----------- | -------------------------------------------------------------------------- |
+    | Name                    | EnvName     |                                                                            |
+    | Value                   | Production  | We want this setting to be production specific value                       |
+    | Deployment slot setting | **checked** | We want this setting to not be overridden by the staging slot when we swap |
 
     | Application Setting     | Value          | Comments                                                                           |
     | ----------------------- | -------------- | ---------------------------------------------------------------------------------- |
     | Name                    | Level1__Level2 | Nested settings needs to follow name convention, and we use 2x `_` for this reason |
     | Value                   | Prod setting   | We want this setting to be production specific value                               |
-    | Deployment slot setting | **checked**    | We want this setting to not be overridden when we swap with the staging slot       |
+    | Deployment slot setting | **checked**    | We want this setting to not be overridden by the staging slot when we swap         |
 
     | Application Setting     | Value               | Comments                                                              |
     | ----------------------- | ------------------- | --------------------------------------------------------------------- |
@@ -125,7 +125,7 @@ In this task you will configure settings for the production slot
 
     | Connection string Setting | Value                                                                                                                                                                                                                                | Comments                                              |
     | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
-    | Name                      | MyDBConnection                                                                                                                                                                                                                    | We will not use Database it is just for demo purpose  |                                                       |
+    | Name                      | MyDBConnection                                                                                                                                                                                                                       | We will not use Database it is just for demo purpose  |  |
     | Value                     | Server=tcp:testdbnm.database.windows.net,1433;Initial Catalog=PRODUCTION;Persist Security Info=False; User ID=uname;Password=pword; MultipleActiveResultSets=False;Encrypt=True; TrustServerCertificate=False;Connection Timeout=30; |                                                       |
     | Type                      | SQLAzure                                                                                                                                                                                                                             |                                                       |
     | Deployment slot setting   | **checked**                                                                                                                                                                                                                          | We want this setting to stay with the slot after swap |
@@ -150,23 +150,23 @@ In this task you will create and configure settings for the staging slot
    
 3. On the **App Service** blade on the left pane in the **Settings** sections select **Configuration**, and change application settings and Connection strings as follows:
 
-    | Application Setting     | Value       | Comments                                                                     |
-    | ----------------------- | ----------- | ---------------------------------------------------------------------------- |
-    | Name                    | EnvName     |                                                                              |
-    | Value                   | Staging     | We want this setting to be staging specific value                         |
-    | Deployment slot setting | **checked** | We want this setting to not be overridden when we swap with the staging slot |
+    | Application Setting     | Value       | Comments                                          |
+    | ----------------------- | ----------- | ------------------------------------------------- |
+    | Name                    | EnvName     |                                                   |
+    | Value                   | Staging     | We want this setting to be staging specific value |
+    | Deployment slot setting | **checked** |                                                   |
 
     | Application Setting     | Value           | Comments                                                                           |
     | ----------------------- | --------------- | ---------------------------------------------------------------------------------- |
     | Name                    | Level1__Level2  | Nested settings needs to follow name convention, and we use 2x `_` for this reason |
-    | Value                   | Staging setting | We want this setting to be staging specific value                               |
-    | Deployment slot setting | **checked**     | We want this setting to not be overridden when we swap with the staging slot       |
+    | Value                   | Staging setting | We want this setting to be staging specific value                                  |
+    | Deployment slot setting | **checked**     |                                                                                    |
 
-    | Application Setting     | Value               | Comments                                                              |
-    | ----------------------- | ------------------- | --------------------------------------------------------------------- |
-    | Name                    | EnvironmentVariable |                                                                       |
-    | Value                   | Set in Staging      |                                                                       |
-    | Deployment slot setting | **unchecked**       | We want this setting be overridden when we swap with the staging slot |
+    | Application Setting     | Value               | Comments |
+    | ----------------------- | ------------------- | -------- |
+    | Name                    | EnvironmentVariable |          |
+    | Value                   | Set in Staging      |          |
+    | Deployment slot setting | **unchecked**       |          |
    
     Now let's add **Connection string** setting
 
