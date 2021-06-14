@@ -1,5 +1,5 @@
 
-# 02/2 - Deploy custom web app to App Services
+# 02/1 - Deploy custom web app to App Services
 
 In this walkthrough, you will create and deploy a custom .net core web app on Windows App Service Plan. Let's dive in!
 

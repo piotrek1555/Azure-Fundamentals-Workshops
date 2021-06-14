@@ -1,5 +1,5 @@
 
-# 02/3 - Deploy custom web app to App Services
+# 02/2 - Deploy custom web app to App Services
 
 In this walkthrough, you will extend previous exercise (02/2) where you have created and deployed custom web app, with deploying into deployment slots.
 

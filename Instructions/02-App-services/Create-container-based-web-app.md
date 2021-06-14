@@ -1,5 +1,5 @@
 
-# 02/1 - Create a Web App
+# 02/3 - Create a Web App
 
 In this walkthrough, we will create a web app that runs a Docker container. The Docker container contains a Welcome message.
 
