@@ -1,4 +1,4 @@
-# 7 - Create a SQL database
+# 04/1 - Create a SQL database
 
 In this walkthrough, we will create a SQL database in Azure and then query the data in that database.
 

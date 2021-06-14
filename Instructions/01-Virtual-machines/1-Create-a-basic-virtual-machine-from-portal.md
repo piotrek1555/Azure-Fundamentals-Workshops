@@ -1,4 +1,4 @@
-# 1 - Create a virtual machine in the portal
+# 01/1 - Create a virtual machine in the portal
 
 In this walkthrough, we will create a virtual machine in the Azure portal connect to it via Remote Desktop Protocol (RDP), install the web server role and test.
 

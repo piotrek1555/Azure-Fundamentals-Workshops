@@ -1,4 +1,4 @@
-# 06 - Create Blob triggered Azure Function
+# 03/2 - Create Blob triggered Azure Function
 
 In this walkthrough, we will create a Blob triggered Function App to resize the image into different sizes - `extra small`, `small`, and `medium`.
 
