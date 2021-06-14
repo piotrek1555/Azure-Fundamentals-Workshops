@@ -150,32 +150,28 @@ In this task you will create and configure settings for the staging slot
    
 3. On the **App Service** blade on the left pane in the **Settings** sections select **Configuration**, and change application settings and Connection strings as follows:
 
-    | Application Setting     | Value       | Comments                                          |
-    | ----------------------- | ----------- | ------------------------------------------------- |
-    | Name                    | EnvName     |                                                   |
-    | Value                   | Staging     | We want this setting to be staging specific value |
-    | Deployment slot setting | **checked** |                                                   |
+    | Application Setting | Value   | Comments         |
+    | ------------------- | ------- | ---------------- |
+    | Name                | EnvName |                  |
+    | Value               | Staging | Change the value |
 
-    | Application Setting     | Value           | Comments                                                                           |
-    | ----------------------- | --------------- | ---------------------------------------------------------------------------------- |
-    | Name                    | Level1__Level2  | Nested settings needs to follow name convention, and we use 2x `_` for this reason |
-    | Value                   | Staging setting | We want this setting to be staging specific value                                  |
-    | Deployment slot setting | **checked**     |                                                                                    |
+    | Application Setting | Value           | Comments         |
+    | ------------------- | --------------- | ---------------- |
+    | Name                | Level1__Level2  |                  |
+    | Value               | Staging setting | Change the value |
 
-    | Application Setting     | Value               | Comments |
-    | ----------------------- | ------------------- | -------- |
-    | Name                    | EnvironmentVariable |          |
-    | Value                   | Set in Staging      |          |
-    | Deployment slot setting | **unchecked**       |          |
+    | Application Setting | Value               | Comments         |
+    | ------------------- | ------------------- | ---------------- |
+    | Name                | EnvironmentVariable |                  |
+    | Value               | Set in Staging      | Change the value |
    
     Now let's add **Connection string** setting
 
     | Connection string Setting | Value                                                                                                                                                                                                                             | Comments                                              |
     | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-    | Name                      | MyDBConnection                                                                                                                                                                                                                    | We will not use Database it is just for demo purpose  |
-    | Value                     | Server=tcp:testdbnm.database.windows.net,1433;Initial Catalog=STAGING;Persist Security Info=False; User ID=uname;Password=pword; MultipleActiveResultSets=False;Encrypt=True; TrustServerCertificate=False;Connection Timeout=30; |                                                       |
-    | Type                      | SQLAzure                                                                                                                                                                                                                          |                                                       |
-    | Deployment slot setting   | **checked**                                                                                                                                                                                                                       | We want this setting to stay with the slot after swap |
+    | Name                      | MyDBConnection                                                                                                                                                                                                                    |  |
+    | Value                     | Server=tcp:testdbnm.database.windows.net,1433;Initial Catalog=**STAGING**;Persist Security Info=False; User ID=uname;Password=pword; MultipleActiveResultSets=False;Encrypt=True; TrustServerCertificate=False;Connection Timeout=30; |                    Just change the value of `Initial Catalog` from `PRODUCTION` to `STAGING`                                   |
+
 
 4. Check the settings and **Save**
    ![app-service-deployment-slots-configuration-staging](/assets/app-service-deployment-slots-configuration-staging.PNG)
