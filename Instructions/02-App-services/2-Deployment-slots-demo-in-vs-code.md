@@ -180,6 +180,8 @@ In this task you will create and configure settings for the staging slot
 
 
 4. Check the settings and **Save**
+
+
    ![app-service-deployment-slots-configuration-staging](/assets/app-service-deployment-slots-configuration-staging.PNG)
    
 
@@ -192,27 +194,35 @@ In this task you will deploy your application to App Services
 
     - Once you've installed an extension in Visual Studio Code, you need to sign into your Azure account.
     - In Visual Studio Code, select the Azure explorer icon, then select Sign in to Azure, and follow the prompts.
+
     ![azure-sign-in.png](/assets/azure-sign-in.png)
 
 2. After signing in, verify that the email address of your Azure account appears in the Status Bar and your subscription(s) appears in the Azure explorer
+
     ![azure-sign-in-verify](/assets/azure-sign-in-verify.PNG)
 
-3. Expand your subscription account and find your **Azure App Services** that you have created in the previous tasks and go further in the tree, by expanding Deployment slots until you get to the `staging` slot, right click and select `Deploy to Slot` 
+3. Expand your subscription account and find your **Azure App Services** that you have created in the previous tasks and go further in the tree, by expanding Deployment slots until you get to the `staging` slot, right click and select `Deploy to Slot`
+
     ![vs-code-deploy-to-slot](/assets/vs-code-deploy-to-slot.PNG)
 
 4. Select your application in the prompt at the top of VS Code
+
     ![deploy-to-slot-browse-app](/assets/deploy-to-slot-browse-app.PNG)
     
-5. Click on **Add config** in the next prompt, 
+5. Click on **Add config** in the next prompt
+
     ![add-config-prompt](/assets/add-config-prompt.PNG)
     
 - and then **Deploy**
+
         ![deploy-to-slot-deploy](/assets/deploy-to-slot-deploy.PNG)
 
-6. On the right-bottom side, the notification prompt should appear, Browse your site 
+1. On the right-bottom side, the notification prompt should appear, Browse your site 
+
     ![notification-prompt](/assets/notification-prompt.PNG)
    
 - you should see that your local settings were overridden with `staging` settings, that you have configured in Azure Portal.
+
     ![publish-to-azure-staging-slot-result](/assets/publish-to-azure-staging-slot-result.PNG)
 
 
@@ -224,9 +234,11 @@ In this task you will swap slots between the `staging` and the `production` slot
 2. Open up your production slot website in new browser tab it should display the previous version of the app
 3. Switch back to the `App Service` and navigate to the **Deployment slots**
 4. Click on **Swap** and wait until the swapping finish the process.
+
     ![app-service-deployment-slots-swap.PNG](/assets/app-service-deployment-slots-swap.PNG)
 
 5. Switch back to your browser tab with application, and refresh the page. It should be similar to this: 
+   
    ![app-service-deployment-slots-swap-result.PNG](/assets/app-service-deployment-slots-swap-result.PNG)
    
     >**Note** The EnvironmentVariable didn't change, that means, if you don't check the deployment slot setting in the Configuration settings, then the variable will be overridden only once, during the deployment, so it get the value from the deployment slot configuration, and if you swap slots, then it won't change. 
