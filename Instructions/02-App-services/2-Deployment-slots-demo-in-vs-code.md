@@ -215,7 +215,7 @@ In this task you will deploy your application to App Services
     
 - and then **Deploy**
 
-        ![deploy-to-slot-deploy](/assets/deploy-to-slot-deploy.PNG)
+    ![deploy-to-slot-deploy](/assets/deploy-to-slot-deploy.PNG)
 
 1. On the right-bottom side, the notification prompt should appear, Browse your site 
 
