@@ -1,4 +1,4 @@
-# Visual Studio 20019 Community Edition Installation
+# Visual Studio 2019 Community Edition Installation
 
 To make sure, that you could follow alone the exercises you will need to install the Visual Studio 2019 Community Edition, which is free to use for developing non-commercial products.
 
