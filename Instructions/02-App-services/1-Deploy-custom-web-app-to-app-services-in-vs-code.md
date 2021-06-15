@@ -84,7 +84,7 @@ In this task you will create deployment files that will be needed in order to de
 
     ![dotnet-publish-zip-your-files.PNG](/assets/dotnet-publish-zip-your-files.PNG)
 
-# Task 3: Deploy Custom .net application to App Services
+# Task 4: Deploy Custom .net application to App Services
 
 In this task you will deploy your application to App Services
 
