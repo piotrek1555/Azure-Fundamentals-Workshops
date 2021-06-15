@@ -95,8 +95,9 @@ In this task, you will add some changes to the application.
     </div>
 
     ```
+4. **Save** your changes.
 
-4. Run your app by entering `dotnet run` command in `Terminal` window, and see if it is working, you should see the settings from the `appsettings.json` file are displayed 
+5. Run your app by entering `dotnet run` command in `Terminal` window, and see if it is working, you should see the settings from the `appsettings.json` file are displayed 
    ![app-service-deployment-slots-local-version](/assets/app-service-deployment-slots-local-version.PNG)
     
    >**Note** the values are set to DEV

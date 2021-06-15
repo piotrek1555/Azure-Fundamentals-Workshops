@@ -86,9 +86,9 @@ In this task you will create deployment files that will be needed in order to de
 
 # Task 4: Deploy Custom .net application to App Services
 
-In this task you will deploy your application to App Services
+In this task you will deploy your application to App Services from Azure Portal with `KUDU tools`
 
-1. Navigate to your App Service that you created earlier in `Task 1` in the Azure Portal
+1. Navigate to your App Service that you created earlier in `Task 1` in this exercise.
 
 2. Scroll down to `Development Tools` section, click on `Advanced Tools` and then click on `Go ->` link
 
