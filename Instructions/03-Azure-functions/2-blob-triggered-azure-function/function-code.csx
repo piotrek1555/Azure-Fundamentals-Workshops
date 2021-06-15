@@ -17,13 +17,13 @@ public static void Run(Stream myBlob, string name, Stream imageExtraSmall, Strea
         ResizeImage(input, imageSmall, ImageSize.Small, format);
     }
 
-    myBlob.Position = 0;
+    image.Position = 0;
     using (Image<Rgba32> input = Image.Load<Rgba32>(myBlob, out format))
     {
         ResizeImage(input, imageMedium, ImageSize.Medium, format);
     }
 
-    myBlob.Position = 0;
+    image.Position = 0;
     using (Image<Rgba32> input = Image.Load<Rgba32>(myBlob, out format))
     {
         ResizeImage(input, imageExtraSmall, ImageSize.ExtraSmall, format);
