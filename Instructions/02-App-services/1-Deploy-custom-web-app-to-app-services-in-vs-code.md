@@ -70,6 +70,7 @@ In this task you will create custom .net core web app in Visual Studio Code.
 
     ![basic-web-page](/assets/basic-web-page.PNG)
 
+6. Shut down the App by pressing Ctrl+C in **Terminal**
 
 # Task 3: Create deployment files
 
