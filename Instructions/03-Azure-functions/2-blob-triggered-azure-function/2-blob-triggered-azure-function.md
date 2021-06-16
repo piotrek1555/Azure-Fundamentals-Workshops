@@ -151,13 +151,13 @@ In this task, we will implement the resize functionality, we will add 3 **output
             ResizeImage(input, imageSmall, ImageSize.Small, format);
         }
 
-        image.Position = 0;
+        myBlob.Position = 0;
         using (Image<Rgba32> input = Image.Load<Rgba32>(myBlob, out format))
         {
             ResizeImage(input, imageMedium, ImageSize.Medium, format);
         }
 
-        image.Position = 0;
+        myBlob.Position = 0;
         using (Image<Rgba32> input = Image.Load<Rgba32>(myBlob, out format))
         {
             ResizeImage(input, imageExtraSmall, ImageSize.ExtraSmall, format);
