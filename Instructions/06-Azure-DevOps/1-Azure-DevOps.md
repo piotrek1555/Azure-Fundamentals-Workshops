@@ -179,3 +179,20 @@ Now you will plan your `Sprint`
 # Task 8: Relese Pipeline
 1. Go to Azure **Pipelines** -> **Releases**, click **+ New** and select **New release pipeline** from the dropdown menu
 ![image](https://user-images.githubusercontent.com/51710476/211897227-7dcb55c9-94ec-46e0-8fc8-b3b28b291d74.png)
+2. ...Select template
+![image](https://user-images.githubusercontent.com/51710476/211898868-14ec54c2-ac53-4606-8beb-6ba8cce91b15.png)
+
+3.Fill in fields
+![image](https://user-images.githubusercontent.com/51710476/211900377-4bd78aa8-9c84-4eb3-b893-a708385d8135.png)
+
+4. Go to Pipeline tab, clcik **Add an artifact**
+![image](https://user-images.githubusercontent.com/51710476/211900612-4e6d0fb3-eefd-4b2a-b42a-611633b8d8be.png)
+
+5. select Build, Project, Source, select Latest, click **Add**
+![image](https://user-images.githubusercontent.com/51710476/211900910-a6904262-43fd-4db8-be7b-980fff1bf325.png)
+
+6. Click thunderbolt icon
+![image](https://user-images.githubusercontent.com/51710476/211901073-cbb3b406-4785-4a8b-82ee-0db60e150de4.png)
+
+7.Check checkbox, click Save
+![image](https://user-images.githubusercontent.com/51710476/211901546-34dcdec5-07c9-4cd0-a43f-db1582d803ea.png)
