@@ -194,5 +194,5 @@ Now you will plan your `Sprint`
 6. Click thunderbolt icon
 ![image](https://user-images.githubusercontent.com/51710476/211901073-cbb3b406-4785-4a8b-82ee-0db60e150de4.png)
 
-7.Check checkbox, click Save
+7.Check checkbox, click Save and then click **Save** in the new window that appears
 ![image](https://user-images.githubusercontent.com/51710476/211901546-34dcdec5-07c9-4cd0-a43f-db1582d803ea.png)
