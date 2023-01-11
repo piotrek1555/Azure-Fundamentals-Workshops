@@ -164,3 +164,18 @@ Now you will plan your `Sprint`
 
 3. Click
 ![image](https://user-images.githubusercontent.com/51710476/211836395-678e763e-5eeb-4a0e-8d30-cff9e0e5847a.png)
+
+4. Set name as **ecommerce.webapp-CI** and select **windows-latest** in the Agent Specification dropdown
+![image](https://user-images.githubusercontent.com/51710476/211893687-26646d19-c194-4833-8acc-59cce5bf7a4b.png)
+
+5. Switch to **Triggers** tab, check **Enable continuous integration** checkbox. In **Branch filters**, make sure `Inlude` is selected in the **Type** dropdow menu and `main` is selected in the **Branch specification** dropdown menu
+![image](https://user-images.githubusercontent.com/51710476/211894156-f26dcbb6-51a1-4308-91b5-7bcabab48485.png)
+
+6. Click **Save & queue**, select **Save** from dropdown menu, and click **Save** in the new window that appears
+
+7. Go to pipelines to view your newly created pipeline
+![image](https://user-images.githubusercontent.com/51710476/211896490-e1b3c1df-4640-4113-bc4a-05bdb9d34e23.png)
+
+# Task 8: Relese Pipeline
+1. Go to Azure **Pipelines** -> **Releases**, click **+ New** and select **New release pipeline** from the dropdown menu
+![image](https://user-images.githubusercontent.com/51710476/211897227-7dcb55c9-94ec-46e0-8fc8-b3b28b291d74.png)
