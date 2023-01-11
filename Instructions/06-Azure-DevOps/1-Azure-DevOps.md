@@ -154,3 +154,13 @@ Now you will plan your `Sprint`
 8. Create new dotnet web app by typing `dotnet new webapp` in terminal
 9. Open it in VS Code
 10. TODO
+
+# Task 8: Build Pipeline
+1. Go to Azure **Pipelines**, on the top right, click **New pipeline**, click **Use the classic editor** at the bottom
+![image](https://user-images.githubusercontent.com/51710476/211810580-c42e3543-0c53-401c-b358-c1c7b8e387a1.png)
+
+2. Click
+![image](https://user-images.githubusercontent.com/51710476/211836520-03c4e59d-f69b-4b2a-8dd3-e01d8411dd1a.png)
+
+3. Click
+![image](https://user-images.githubusercontent.com/51710476/211836395-678e763e-5eeb-4a0e-8d30-cff9e0e5847a.png)
