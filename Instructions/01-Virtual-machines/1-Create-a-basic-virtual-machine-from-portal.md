@@ -77,7 +77,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
 
     ##### Inbound port rules
    
-    ![inbound-port-rule](/assets/inbound-port-rule-2.png)
+    ![inbound-port-rule](/assets/inbound-port-rule.PNG)
 
     You will need to define some `inbound port rules` for accessing this virtual machine. 
 
