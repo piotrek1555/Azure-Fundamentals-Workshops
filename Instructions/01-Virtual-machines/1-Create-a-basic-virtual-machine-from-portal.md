@@ -56,7 +56,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     **You can use the following values:**
     | Settings | Values           |
     | -------- | ---------------- |
-    | Size     | **Standard_B1s** |
+    | Size     | **Standard_B1ms** |
 
     the next section that you will define is `administrator account` 
 
@@ -76,7 +76,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     The next section to cover is `Inbound port rules`
 
     ##### Inbound port rules
-    ![inbound-port-rule](/assets/inbound-port-rule.PNG)
+    ![image](https://user-images.githubusercontent.com/51710476/212888643-dcf32124-b560-48f9-bc50-4ac624aee5f0.png)
 
     You will need to define some `inbound port rules` for accessing this virtual machine. 
 
