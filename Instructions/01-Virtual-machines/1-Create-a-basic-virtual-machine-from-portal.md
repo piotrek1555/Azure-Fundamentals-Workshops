@@ -6,7 +6,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
 
 1. Sign-in to the Azure portal: https://portal.azure.com
 
-2. From the Top search bar in the Portal Menu, search for and select Virtual machines, and then click `+Add`, and choose `+Virtual machine` from the drop down.
+2. From the Top search bar in the Portal Menu, search for and select Virtual machines, and then click `+Create`, and choose `+Azure virtual machine` from the drop down.
 
 3. On the `Basics` tab, fill in the following information (leave the defaults for everything else):
   
@@ -49,7 +49,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     | Virtual machine image | **Windows Server 2019 Datacenter - Gen1** |
 
     ###### Azure Spot instance
-    Leave `Azure Spot instance` unchecked. That's a setting that allows Azure to stop and deallocate a virtual machine if Azure needs that compute capacity back for whatever reason.
+    Leave `Run with Azure Spot discount` unchecked. That's a setting that allows Azure to stop and deallocate a virtual machine if Azure needs that compute capacity back for whatever reason.
 
     ###### Size
     And lastly in this section, for `size` pick a smaller virtual machine size from the list of VM sizes available for selected region, since you don't need a ton of capacity for this demo purpose.
@@ -69,11 +69,11 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     | Settings                       | Values           |
     | ------------------------------ | ---------------- |
     | Administrator account username | **azureuser**    |
-    | Administrator account password | **Pa$$w0rd1234** |
+    | Administrator account password | **Password1234!!** |
 
     >remember your account information, because you will need it later to log in via RDP.
 
-    The next section to cover is `inbound-port-rule`
+    The next section to cover is `Inbound port rules`
 
     ##### Inbound port rules
     ![inbound-port-rule](/assets/inbound-port-rule.PNG)
