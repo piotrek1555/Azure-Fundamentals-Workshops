@@ -69,7 +69,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     | Settings                       | Values           |
     | ------------------------------ | ---------------- |
     | Administrator account username | **azureuser**    |
-    | Administrator account password | **Password1234!!** |
+    | Administrator account password | **Password%1234** |
 
     >remember your account information, because you will need it later to log in via RDP.
 

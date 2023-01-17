@@ -40,7 +40,7 @@ az vm create \
     --name "win-cli-vm" \
     --image "win2019datacenter" \
     --admin-username "azureuser" \
-    --admin-password "Pa$$w0rd1234" 
+    --admin-password "Password%1234" 
 ```
 
 **Note**: The command will take 2 to 3 minutes to complete. The command will create a virtual machine and various resources associated with it such as storage, networking and security resources. Do not continue to the next step until the virtual machine deployment is complete. 
