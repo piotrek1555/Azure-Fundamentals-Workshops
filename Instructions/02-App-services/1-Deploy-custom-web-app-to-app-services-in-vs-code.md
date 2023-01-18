@@ -80,7 +80,7 @@ In this task you will create deployment files that will be needed in order to de
 
     ![dotnet-publish-to-folder](/assets/dotnet-publish-to-folder.PNG)
 
-2. Navigate to your  `bin/Release/net5.0/publish` folder and compress to zip folder all the files. You can name it like you wish, for example `deploymentfiles`
+2. Navigate to your  `bin/Release/net6.0/publish` folder and compress to zip folder all the files. You can name it like you wish, for example `deploymentfiles`
 
     ![dotnet-publish-zip-your-files.PNG](/assets/dotnet-publish-zip-your-files.PNG)
 
