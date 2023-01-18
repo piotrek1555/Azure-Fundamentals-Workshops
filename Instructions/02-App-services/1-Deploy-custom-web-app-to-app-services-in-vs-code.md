@@ -4,7 +4,7 @@
 In this walkthrough, you will create and deploy a custom .net core web app on Windows App Service Plan. Let's dive in!
 
 ## Perquisite:
-- Make sure, that you  have installed [.NET Core SDK](https://dotnet.microsoft.com/download). The SDK also includes the Runtime.
+- Make sure, that you  have installed [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). The SDK also includes the Runtime.
 ![net-core-sdk](/assets/net-core-sdk.PNG)
 - The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) from the VS Code Marketplace.
 
@@ -26,10 +26,10 @@ In this task, you will create an Azure App Service Web App.
     | Resource Group   | **az-fun-web-rg**          | Create a new one                                          |
     | Name             | **az-fun-custom-web-xxxx** | Name must be unique across all Azure subscriptions        |
     | Publish          | **Code**                   |                                                           |
-    | Runtime stack    | **.Net Core 3.1 (LTS)**    |                                                           |
+    | Runtime stack    | **.NET 6 (LTS)**           |                                                           |
     | Operating System | **Windows**                |                                                           |
     | Region           | **West Europe**            |                                                           |
-    | Linux Plan       | **az-fun-win-asp**         | Create new plan, name must be unique in your subscription |
+    | Windows Plan     | **az-fun-win-asp**         | Create new plan, name must be unique in your subscription |
     | Sku and size     | **Standard S1**            |                                                           |
     
     >**Note** - Remember to change the **xxxx** so that your Web App name is unique.
