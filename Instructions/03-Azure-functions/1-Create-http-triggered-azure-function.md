@@ -15,12 +15,12 @@ In this task, we will create a Function app.
     | Settings          | Value                         |
     | ----------------- | ----------------------------- |
     | Subscription      | **Keep default supplied**     |
-    | Resource group    | **az-fun-func-rg** |
-    | Function App name | **az-fun-func-xxxx**             |
+    | Resource group    | **az-fun-func-rg**            |
+    | Function App name | **az-fun-func-xxxx**          |
     | Publish           | **Code**                      |
     | Runtime stack     | **.NET**                      |
-    | Version           | **3.1**                       |
-    | Region            | **West Europe**                   |
+    | Version           | **6**                         |
+    | Region            | **West Europe**               |
 
     >**Note** - Remember to change the **xxxx** so that it makes a unique **Function App name**
 
@@ -42,7 +42,7 @@ In this task, we will use the Webhook + API function to display a message when t
 
     ![function-app-add](/assets/function-app-add.PNG)
 
-3. An **Add function** pop-up window will appear on the right. In the **Select a template** section click **HTTP trigger**. Click **Add** 
+3. An **Add function** pop-up window will appear on the right. In the **Select a template** section click **HTTP trigger**. Click **Create** 
 
     ![function-app-add-httptrigger](/assets/function-app-add-httptrigger.PNG)
 
