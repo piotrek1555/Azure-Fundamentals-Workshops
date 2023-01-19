@@ -119,7 +119,7 @@ In this task, we will implement the resize functionality, we will add 3 **output
     </PropertyGroup>
 
     <ItemGroup>
-            <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+            <PackageReference Include="SixLabors.ImageSharp" Version="2.0.2" />
     </ItemGroup>
     </Project>
    ```
