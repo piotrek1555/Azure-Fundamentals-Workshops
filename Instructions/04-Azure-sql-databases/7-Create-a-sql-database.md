@@ -12,17 +12,18 @@ In this task, we will create a SQL database.
 
 3. On the **Basics** tab, fill in this information.  
 
-    | Setting            | Value                                                        |
-    | ------------------ | ------------------------------------------------------------ |
-    | Subscription       | **Use default supplied**                                     |
-    | Resource group     | **az-fun-sql-rg**                                            |
-    | Database name      | **az-fun-sql-db**                                            |
-    | Server             | Select **Create new** (A new sidebar will open on the right) |
-    | Server name        | **az-fun-sql-srv-xxxx** (must be unique)                     |
-    | Server admin login | **sqluser**                                                  |
-    | Password           | **Pa$$w0rd1234**                                             |
-    | Location           | **(Europe) West Europe**                                     |
-    | Click              | **OK**                                                       |
+    | Setting               | Value                                                        |
+    | --------------------- | ------------------------------------------------------------ |
+    | Subscription          | **Use default supplied**                                     |
+    | Resource group        | **az-fun-sql-rg**                                            |
+    | Database name         | **az-fun-sql-db**                                            |
+    | Server                | Select **Create new** (A new sidebar will open on the right) |
+    | Server name           | **az-fun-sql-srv-xxxx** (must be unique)                     |
+    | Authentication method | Select **Use SQL authentication**                            |
+    | Server admin login    | **sqluser**                                                  |
+    | Password              | **Pa$$w0rd1234**                                             |
+    | Location              | **(Europe) West Europe**                                     |
+    | Click                 | **OK**                                                       |
 
    ![sql-database-server-create](/assets/sql-database-server-create.PNG)
 
