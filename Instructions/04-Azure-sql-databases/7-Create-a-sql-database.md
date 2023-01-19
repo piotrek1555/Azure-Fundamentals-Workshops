@@ -27,7 +27,7 @@ In this task, we will create a SQL database.
 
    ![sql-database-server-create](/assets/sql-database-server-create.PNG)
 
-4. In the **Compute + storage** option, click on **Configure database** link, and select the **Standard** performance tier.
+4. In the **Compute + storage** option, click on **Configure database** link, and select the **Standard** performance tier, then click **Apply**.
     ![sql-database-server-pricing-tier](/assets/sql-database-server-pricing-tier.PNG)
 
 5. Click **Review + create** and then click **Create** to deploy and provision the resource group, server, and database. It can take approx. 2 to 5 minutes to deploy.
