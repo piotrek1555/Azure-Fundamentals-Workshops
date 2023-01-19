@@ -54,7 +54,7 @@ In this task, we will configure the SQL server and run a SQL query.
 6. From the az-fun-sql-db **Overview** blade, click **Set server firewall** Located on the top center of the overview screen.
     ![sql-database-server-set-serrver-firewall](/assets/sql-database-server-set-serrver-firewall.PNG)
 
-7. Click **+ Add client IP** (top menu bar) to add the IP address referenced in the error. (it may have autofilled for you - if not paste it into the IP address fields). Be sure to **Save** your changes. 
+7. Select **Selected network** (top menu bar) to add the IP address referenced in the error. (it may have autofilled for you **Add your client IPv4 address ...** - if not paste it into the IP address fields). Be sure to **Save** your changes. 
 
     ![sql-database-server-set-serrver-firewall-add-client-ip.PNG](/assets/sql-database-server-set-serrver-firewall-add-client-ip.PNG)
 
