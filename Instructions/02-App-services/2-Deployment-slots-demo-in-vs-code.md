@@ -4,7 +4,7 @@
 In this walkthrough, you will extend previous exercise (02/2) where you have created and deployed custom web app, with deploying into deployment slots.
 
 ## Perquisite:
-- Make sure, that you  have installed [.NET Core SDK](https://dotnet.microsoft.com/download). The SDK also includes the Runtime.
+- Make sure, that you  have installed [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0). The SDK also includes the Runtime.
 ![net-core-sdk](/assets/net-core-sdk.PNG)
 - The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) from the VS Code Marketplace.
 - The [Azure App Services extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) from the VS Code Marketplace.
@@ -145,7 +145,7 @@ In this task you will configure settings for the production slot
 
 In this task you will create and configure settings for the staging slot
 
-1. On the **App Service** blade, navigate to **Deployment slots** under the **Deployment** section and click **Add Slot**
+1. On the **App Service** blade, navigate to **Deployment slots** under the **Deployment** section, then complete the fields according to the table below and click **Add Slot**
 
     | Slot Setting        | Value                 | Comments                                                                 |
     | ------------------- | --------------------- | ------------------------------------------------------------------------ |
