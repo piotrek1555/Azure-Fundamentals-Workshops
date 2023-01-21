@@ -12,21 +12,22 @@ In this task, we will create a SQL database.
 
 3. On the **Basics** tab, fill in this information.  
 
-    | Setting            | Value                                                        |
-    | ------------------ | ------------------------------------------------------------ |
-    | Subscription       | **Use default supplied**                                     |
-    | Resource group     | **az-fun-sql-rg**                                            |
-    | Database name      | **az-fun-sql-db**                                            |
-    | Server             | Select **Create new** (A new sidebar will open on the right) |
-    | Server name        | **az-fun-sql-srv-xxxx** (must be unique)                     |
-    | Server admin login | **sqluser**                                                  |
-    | Password           | **Pa$$w0rd1234**                                             |
-    | Location           | **(Europe) West Europe**                                     |
-    | Click              | **OK**                                                       |
+    | Setting               | Value                                                        |
+    | --------------------- | ------------------------------------------------------------ |
+    | Subscription          | **Use default supplied**                                     |
+    | Resource group        | **az-fun-sql-rg**                                            |
+    | Database name         | **az-fun-sql-db**                                            |
+    | Server                | Select **Create new** (A new sidebar will open on the right) |
+    | Server name           | **az-fun-sql-srv-xxxx** (must be unique)                     |
+    | Authentication method | Select **Use SQL authentication**                            |
+    | Server admin login    | **sqluser**                                                  |
+    | Password              | **Pa$$w0rd1234**                                             |
+    | Location              | **(Europe) West Europe**                                     |
+    | Click                 | **OK**                                                       |
 
    ![sql-database-server-create](/assets/sql-database-server-create.PNG)
 
-4. In the **Compute + storage** option, click on **Configure database** link, and select the **Standard** performance tier.
+4. In the **Compute + storage** option, click on **Configure database** link, and select the **Standard** performance tier, then click **Apply**.
     ![sql-database-server-pricing-tier](/assets/sql-database-server-pricing-tier.PNG)
 
 5. Click **Review + create** and then click **Create** to deploy and provision the resource group, server, and database. It can take approx. 2 to 5 minutes to deploy.
@@ -53,7 +54,7 @@ In this task, we will configure the SQL server and run a SQL query.
 6. From the az-fun-sql-db **Overview** blade, click **Set server firewall** Located on the top center of the overview screen.
     ![sql-database-server-set-serrver-firewall](/assets/sql-database-server-set-serrver-firewall.PNG)
 
-7. Click **+ Add client IP** (top menu bar) to add the IP address referenced in the error. (it may have autofilled for you - if not paste it into the IP address fields). Be sure to **Save** your changes. 
+7. Select **Selected network** (top menu bar) to add the IP address referenced in the error. (it may have autofilled for you **Add your client IPv4 address ...** - if not paste it into the IP address fields). Be sure to **Save** your changes. 
 
     ![sql-database-server-set-serrver-firewall-add-client-ip.PNG](/assets/sql-database-server-set-serrver-firewall-add-client-ip.PNG)
 

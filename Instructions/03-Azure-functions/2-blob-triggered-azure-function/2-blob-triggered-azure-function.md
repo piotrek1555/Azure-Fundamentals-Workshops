@@ -19,7 +19,7 @@ In this task, we will create a Function app service, if you already have one, yo
     | Function App name | **az-fun-func-xxxx**      |
     | Publish           | **Code**                  |
     | Runtime stack     | **.NET**                  |
-    | Version           | **3.1**                   |
+    | Version           | **6**                     |
     | Region            | **West Europe**           |
 
     >**Note** - Remember to change the **xxxx** so that it makes a unique **Function App name**
@@ -52,7 +52,7 @@ In this task, we will create the Blob Triggered function to see the name of uplo
 
     ![function-app-blobtriggered-code](/assets/function-app-blobtriggered-code.PNG)
 
-6. Expand the **Logs**
+6. Expand the **Logs** and select **Filesystem Logs** from the dropdown 
     ![function-app-expand-the-logs](/assets/function-app-expand-the-logs.PNG)
 
 7. Open a new browser tab and navigate to Azure Portal. Find your **Function Apps** **resource group** and open the storage account service associated with it.
@@ -119,7 +119,7 @@ In this task, we will implement the resize functionality, we will add 3 **output
     </PropertyGroup>
 
     <ItemGroup>
-            <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+            <PackageReference Include="SixLabors.ImageSharp" Version="2.0.2" />
     </ItemGroup>
     </Project>
    ```

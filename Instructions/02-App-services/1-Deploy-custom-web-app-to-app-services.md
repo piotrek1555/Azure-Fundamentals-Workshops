@@ -21,10 +21,10 @@ In this task, you will create an Azure App Service Web App.
     | Resource Group   | **az-fun-web-rg**          | Create a new one                                          |
     | Name             | **az-fun-custom-web-xxxx** | Name must be unique across all Azure subscriptions        |
     | Publish          | **Code**                   |                                                           |
-    | Runtime stack    | **.Net Core 3.1 (LTS)**    |                                                           |
+    | Runtime stack    | **.NET 6 (LTS)**           |                                                           |
     | Operating System | **Windows**                |                                                           |
     | Region           | **West Europe**            |                                                           |
-    | Linux Plan       | **az-fun-win-asp**         | Create new plan, name must be unique in your subscription |
+    | Windows Plan     | **az-fun-win-asp**         | Create new plan, name must be unique in your subscription |
     | Sku and size     | **Standard S1**            |                                                           |
     
     >**Note** - Remember to change the **xxxx** so that your Web App name is unique.
@@ -45,16 +45,15 @@ In this task you will create custom .net core web app in Visual Studio.
 2. Search for `asp.net core web app` in the search bar, and select the project template for creating an asp.net core application with razor content.
     ![razer-content-webapp](/assets/razer-content-webapp.PNG)
 
-3. Give it a name for example `WebApplication`, and select the desired folder for your app, click `Next`
+3. Give it a name for example `MyWebApplication`, and select the desired folder for your app, click `Next`
 
 4. Leave `Additional information` page as default, and hit `Create`
     | Setting                          | Value                                 | Comments                                           |
     | -------------------------------- | ------------------------------------- | -------------------------------------------------- |
-    | Target Framework                 | **.NET Core 3.1 (Long-term support)** |                                                    |
+    | Target Framework                 | **.NET 6.0 (Long-term support)**      |                                                    |
     | Authentication Type              | **None**                              | Create a new one                                   |
     | Configure for HTTPS              | **checked**                           | Name must be unique across all Azure subscriptions |
     | Enable Docker                    | **unchecked**                         |                                                    |
-    | Enable Razor runtime compilation | **unchecked**                         |                                                    |
 
 5. Run your application locally, and see if it is working, it should display, the basic web page for selected project template
     ![basic-web-page](/assets/basic-web-page.PNG)
