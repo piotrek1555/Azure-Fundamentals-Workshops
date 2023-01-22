@@ -153,9 +153,8 @@ Now you will plan your `Sprint`
 7. Move to the cloned folder by typing `cd ecommerce.webapp` in terminal
 8. Create new dotnet web app by typing `dotnet new webapp` in terminal
 9. Open it in VS Code
-10. TODO
 
-# Task 8: Create WebApp
+# Task 8: Create Azure WebApp
 In this task, you will create an Azure App Service Web App. 
 You can use the web app created in previous demo. If you don't have one or want to create a new one, follow the instructions in **Task 1** in this manual: [App-services](https://github.com/piotrek1555/Azure-Fundamentals-Workshops/blob/main/Instructions/02-App-services/1-Deploy-custom-web-app-to-app-services-in-vs-code.md).
 
@@ -218,6 +217,25 @@ From the **App service name** dropdown, select your web app that you created in 
 
 ![image](https://user-images.githubusercontent.com/51710476/211901546-34dcdec5-07c9-4cd0-a43f-db1582d803ea.png)
 
+
+# Task 11: Test your CI/CD pipeline
+
+1. On your local machine, open Visual Studio Code with the app you have created in Task 7.
+
+2. X
+    ![devops-testing-commit-changes](/assets/devops-testing-commit-changes.PNG)
+
+3. X
+    ![devops-testing-sync-changes](/assets/devops-testing-sync-changes.PNG)
+
+4. X
+    ![devops-testing-pipeline-running](/assets/devops-testing-pipeline-running.PNG)
+5. X
+    ![devops-testing-pipeline-completed](/assets/devops-testing-pipeline-completed.PNG)
+6. X
+    ![devops-testing-release-running](/assets/devops-testing-release-running.PNG)
+7. X
+    ![devops-testing-release-completed](/assets/devops-testing-release-completed.PNG)
 
 **Congratulations!** You have created azure CI/CD pipeline.
 
