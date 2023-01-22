@@ -249,7 +249,7 @@ From the **App service name** dropdown, select your web app that you created in 
 8. Open your web app in web browser and verify if everything works as expected. 
 You can make some changes, for example, edit Index.cshtml file, then commit and sync the changes. Once the pipelines are successful, verify your web app in a web browser.
 
-![devops-testing-final-varification](/assets/devops-testing-final-varification.PNG)
+![devops-testing-final-verification](/assets/devops-testing-final-verification.PNG)
 
 **Congratulations!** You have created azure CI/CD pipeline.
 
