@@ -222,20 +222,32 @@ From the **App service name** dropdown, select your web app that you created in 
 
 1. On your local machine, open Visual Studio Code with the app you have created in Task 7.
 
-2. X
+2. Go to **Source control** tab, fill in the message field and click **Commit**.
+
     ![devops-testing-commit-changes](/assets/devops-testing-commit-changes.PNG)
 
-3. X
+3. Click **Sync Chnages** (This will push your changes to the repository in Azure)
+
     ![devops-testing-sync-changes](/assets/devops-testing-sync-changes.PNG)
 
-4. X
+4. Go to the Azure DevOps (https://dev.azure.com/). Click **Pipelines** oin the menu on the left side and select **Pipeline**. You should notice that the pipeline is running.
+
     ![devops-testing-pipeline-running](/assets/devops-testing-pipeline-running.PNG)
-5. X
+
+5. After some time you should see a Success status on the pipeline - check mark on green background.
+
     ![devops-testing-pipeline-completed](/assets/devops-testing-pipeline-completed.PNG)
-6. X
+
+6. Switch to **Releases** tab. You should notice that the release pipeline is running.
+
     ![devops-testing-release-running](/assets/devops-testing-release-running.PNG)
-7. X
+
+7. After some time you should see a Success status on the release pipeline - check mark on green background. This means your latest changes are deployed to Azure Wep App.
+
     ![devops-testing-release-completed](/assets/devops-testing-release-completed.PNG)
+
+8. Open your web app in web browser and verify if everything works as expected. 
+You can make some changes, for example, edit Index.cshtml file, then commit and sync the changes. Once the pipelines are successful, verify your web app in a web browser.
 
 **Congratulations!** You have created azure CI/CD pipeline.
 
