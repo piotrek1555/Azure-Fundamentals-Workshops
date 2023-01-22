@@ -162,49 +162,60 @@ You can use the web app created in previous demo. If you don't have one or want 
 
 # Task 9: Build Pipeline
 1. Go to Azure **Pipelines**, on the top right, click **New pipeline**, click **Use the classic editor** at the bottom
+
 ![image](https://user-images.githubusercontent.com/51710476/211810580-c42e3543-0c53-401c-b358-c1c7b8e387a1.png)
 
 2. Select **Azure Repos Git**, select your project, repository and select **main** branch from the **Default branch for manual and scheduled builds**. Click **Continue**.
+
 ![image](https://user-images.githubusercontent.com/51710476/211836520-03c4e59d-f69b-4b2a-8dd3-e01d8411dd1a.png)
 
-3. From the list of available templates, select **ASP.NET Core** and click **Apply**
+3. From the list of available templates, select **ASP.NET Core** and click **Apply**.
+
 ![image](https://user-images.githubusercontent.com/51710476/211836395-678e763e-5eeb-4a0e-8d30-cff9e0e5847a.png)
 
 4. Set name as **ecommerce.webapp-CI** and select **windows-latest** in the Agent Specification dropdown.
+
 ![image](https://user-images.githubusercontent.com/51710476/211893687-26646d19-c194-4833-8acc-59cce5bf7a4b.png)
 
 5. Switch to **Triggers** tab, check **Enable continuous integration** checkbox. In **Branch filters**, make sure `Inlude` is selected in the **Type** dropdow menu and `main` is selected in the **Branch specification** dropdown menu.
+
 ![image](https://user-images.githubusercontent.com/51710476/211894156-f26dcbb6-51a1-4308-91b5-7bcabab48485.png)
 
 6. Click **Save & queue**, select **Save** from dropdown menu, and click **Save** in the new window that appears.
 
 7. Go to pipelines to view your newly created pipeline.
+
 ![image](https://user-images.githubusercontent.com/51710476/211896490-e1b3c1df-4640-4113-bc4a-05bdb9d34e23.png)
 
 # Task 10: Relese Pipeline
-1. Go to Azure **Pipelines** -> **Releases**, click **+ New** and select **New release pipeline** from the dropdown menu
+1. Go to Azure **Pipelines** -> **Releases**, click **+ New** and select **New release pipeline** from the dropdown menu.
+
 ![image](https://user-images.githubusercontent.com/51710476/211897227-7dcb55c9-94ec-46e0-8fc8-b3b28b291d74.png)
 
-2. From the list of available templates, select **Azure App Service deployment** and click **Apply**
+2. From the list of available templates, select **Azure App Service deployment** and click **Apply**.
+
 ![image](https://user-images.githubusercontent.com/51710476/211898868-14ec54c2-ac53-4606-8beb-6ba8cce91b15.png)
 
 3. Switch to **Tasks** tab, set **stage name**. 
 From the **Azure subscription** dropdown, select your subscription and click the **Authorize** button that appears. Then sign in to your azure account.
 From the **App service name** dropdown, select your web app that you created in Task 8.
+
 ![image](https://user-images.githubusercontent.com/51710476/211900377-4bd78aa8-9c84-4eb3-b893-a708385d8135.png)
 
 4. Go to the **Pipeline** tab, click **Add an artifact**
+
 ![image](https://user-images.githubusercontent.com/51710476/211900612-4e6d0fb3-eefd-4b2a-b42a-611633b8d8be.png)
 
-5. From the **Project** dropdown select your project **Azure Fundamentals** and then select your build pipeline from the **Source** dropdown. Leave the defaults for everything else. 
+5. From the **Project** dropdown select your project **Azure Fundamentals** and then select your build pipeline from the **Source** dropdown. Leave the defaults for everything else. Click **Add**.
 
 ![image](https://user-images.githubusercontent.com/51710476/211900910-a6904262-43fd-4db8-be7b-980fff1bf325.png)
 
-6. Click thunderbolt icon to display
+6. Click thunderbolt icon to display triggers configuration.
 
 ![image](https://user-images.githubusercontent.com/51710476/211901073-cbb3b406-4785-4a8b-82ee-0db60e150de4.png)
 
-7. Check checkbox, click Save and then click **Save** in the new window that appears
+7. Check the **Continuous deployment trigger** checkbox. Click the **Save** button at the top of the window and then click **OK** in the new window that appears.
+
 ![image](https://user-images.githubusercontent.com/51710476/211901546-34dcdec5-07c9-4cd0-a43f-db1582d803ea.png)
 
 
