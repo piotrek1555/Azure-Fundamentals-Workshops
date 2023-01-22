@@ -197,9 +197,11 @@ From the **App service name** dropdown, select your web app that you created in 
 ![image](https://user-images.githubusercontent.com/51710476/211900612-4e6d0fb3-eefd-4b2a-b42a-611633b8d8be.png)
 
 5. From the **Project** dropdown select your project **Azure Fundamentals** and then select your build pipeline from the **Source** dropdown. Leave the defaults for everything else. 
+
 ![image](https://user-images.githubusercontent.com/51710476/211900910-a6904262-43fd-4db8-be7b-980fff1bf325.png)
 
 6. Click thunderbolt icon to display
+
 ![image](https://user-images.githubusercontent.com/51710476/211901073-cbb3b406-4785-4a8b-82ee-0db60e150de4.png)
 
 7. Check checkbox, click Save and then click **Save** in the new window that appears
