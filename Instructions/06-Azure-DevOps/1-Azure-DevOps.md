@@ -156,15 +156,15 @@ Now you will plan your `Sprint`
 10. TODO
 
 # Task 8: Create WebApp
-In this task, you will create an Azure App Service Web App. You can use the web app created in previous demo.
-If you don't have one or want to create a new one, follow the instructions in **Task 1** in this manual - [02-App-services](https://github.com/piotrek1555/Azure-Fundamentals-Workshops/blob/main/Instructions/02-App-services/1-Deploy-custom-web-app-to-app-services-in-vs-code.md).
+In this task, you will create an Azure App Service Web App. 
+You can use the web app created in previous demo. If you don't have one or want to create a new one, follow the instructions in **Task 1** in this manual: [App-services](https://github.com/piotrek1555/Azure-Fundamentals-Workshops/blob/main/Instructions/02-App-services/1-Deploy-custom-web-app-to-app-services-in-vs-code.md).
 
 
-# Task 8: Build Pipeline
+# Task 9: Build Pipeline
 1. Go to Azure **Pipelines**, on the top right, click **New pipeline**, click **Use the classic editor** at the bottom
 ![image](https://user-images.githubusercontent.com/51710476/211810580-c42e3543-0c53-401c-b358-c1c7b8e387a1.png)
 
-2. Click
+2. Select **Azure Repos Git**, select your project, repository and selet **main** branch from the **Default branch for manual and scheduled builds**. Click **Continue**.
 ![image](https://user-images.githubusercontent.com/51710476/211836520-03c4e59d-f69b-4b2a-8dd3-e01d8411dd1a.png)
 
 3. Click
@@ -181,7 +181,7 @@ If you don't have one or want to create a new one, follow the instructions in **
 7. Go to pipelines to view your newly created pipeline
 ![image](https://user-images.githubusercontent.com/51710476/211896490-e1b3c1df-4640-4113-bc4a-05bdb9d34e23.png)
 
-# Task 8: Relese Pipeline
+# Task 10: Relese Pipeline
 1. Go to Azure **Pipelines** -> **Releases**, click **+ New** and select **New release pipeline** from the dropdown menu
 ![image](https://user-images.githubusercontent.com/51710476/211897227-7dcb55c9-94ec-46e0-8fc8-b3b28b291d74.png)
 2. ...Select template
@@ -201,3 +201,8 @@ If you don't have one or want to create a new one, follow the instructions in **
 
 7.Check checkbox, click Save and then click **Save** in the new window that appears
 ![image](https://user-images.githubusercontent.com/51710476/211901546-34dcdec5-07c9-4cd0-a43f-db1582d803ea.png)
+
+
+**Congratulations!** You have created azure CI/CD pipeline.
+
+>**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
