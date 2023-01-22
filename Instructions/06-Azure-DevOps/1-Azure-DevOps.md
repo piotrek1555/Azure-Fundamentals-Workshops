@@ -249,6 +249,8 @@ From the **App service name** dropdown, select your web app that you created in 
 8. Open your web app in web browser and verify if everything works as expected. 
 You can make some changes, for example, edit Index.cshtml file, then commit and sync the changes. Once the pipelines are successful, verify your web app in a web browser.
 
+![devops-testing-final-varification](/assets/devops-testing-final-varification.PNG)
+
 **Congratulations!** You have created azure CI/CD pipeline.
 
 >**Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
