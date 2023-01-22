@@ -188,16 +188,18 @@ You can use the web app created in previous demo. If you don't have one or want 
 2. From the list of available templates, select **Azure App Service deployment** and click **Apply**
 ![image](https://user-images.githubusercontent.com/51710476/211898868-14ec54c2-ac53-4606-8beb-6ba8cce91b15.png)
 
-3. Fill in fields
+3. Switch to **Tasks** tab, set **stage name**. 
+From the **Azure subscription** dropdown, select your subscription and click the **Authorize** button that appears. Then sign in to your azure account.
+From the **App service name** dropdown, select your web app that you created in Task 8.
 ![image](https://user-images.githubusercontent.com/51710476/211900377-4bd78aa8-9c84-4eb3-b893-a708385d8135.png)
 
-4. Go to Pipeline tab, clcik **Add an artifact**
+4. Go to the **Pipeline** tab, click **Add an artifact**
 ![image](https://user-images.githubusercontent.com/51710476/211900612-4e6d0fb3-eefd-4b2a-b42a-611633b8d8be.png)
 
-5. select Build, Project, Source, select Latest, click **Add**
+5. From the **Project** dropdown select your project **Azure Fundamentals** and then select your build pipeline from the **Source** dropdown. Leave the defaults for everything else. 
 ![image](https://user-images.githubusercontent.com/51710476/211900910-a6904262-43fd-4db8-be7b-980fff1bf325.png)
 
-6. Click thunderbolt icon
+6. Click thunderbolt icon to display
 ![image](https://user-images.githubusercontent.com/51710476/211901073-cbb3b406-4785-4a8b-82ee-0db60e150de4.png)
 
 7. Check checkbox, click Save and then click **Save** in the new window that appears
