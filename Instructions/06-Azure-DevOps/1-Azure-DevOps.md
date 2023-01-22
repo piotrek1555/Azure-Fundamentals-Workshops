@@ -164,27 +164,27 @@ You can use the web app created in previous demo. If you don't have one or want 
 1. Go to Azure **Pipelines**, on the top right, click **New pipeline**, click **Use the classic editor** at the bottom
 ![image](https://user-images.githubusercontent.com/51710476/211810580-c42e3543-0c53-401c-b358-c1c7b8e387a1.png)
 
-2. Select **Azure Repos Git**, select your project, repository and selet **main** branch from the **Default branch for manual and scheduled builds**. Click **Continue**.
+2. Select **Azure Repos Git**, select your project, repository and select **main** branch from the **Default branch for manual and scheduled builds**. Click **Continue**.
 ![image](https://user-images.githubusercontent.com/51710476/211836520-03c4e59d-f69b-4b2a-8dd3-e01d8411dd1a.png)
 
-3. Click
+3. From the list of available templates, select **ASP.NET Core** and click **Apply**
 ![image](https://user-images.githubusercontent.com/51710476/211836395-678e763e-5eeb-4a0e-8d30-cff9e0e5847a.png)
 
-4. Set name as **ecommerce.webapp-CI** and select **windows-latest** in the Agent Specification dropdown
+4. Set name as **ecommerce.webapp-CI** and select **windows-latest** in the Agent Specification dropdown.
 ![image](https://user-images.githubusercontent.com/51710476/211893687-26646d19-c194-4833-8acc-59cce5bf7a4b.png)
 
-5. Switch to **Triggers** tab, check **Enable continuous integration** checkbox. In **Branch filters**, make sure `Inlude` is selected in the **Type** dropdow menu and `main` is selected in the **Branch specification** dropdown menu
+5. Switch to **Triggers** tab, check **Enable continuous integration** checkbox. In **Branch filters**, make sure `Inlude` is selected in the **Type** dropdow menu and `main` is selected in the **Branch specification** dropdown menu.
 ![image](https://user-images.githubusercontent.com/51710476/211894156-f26dcbb6-51a1-4308-91b5-7bcabab48485.png)
 
-6. Click **Save & queue**, select **Save** from dropdown menu, and click **Save** in the new window that appears
+6. Click **Save & queue**, select **Save** from dropdown menu, and click **Save** in the new window that appears.
 
-7. Go to pipelines to view your newly created pipeline
+7. Go to pipelines to view your newly created pipeline.
 ![image](https://user-images.githubusercontent.com/51710476/211896490-e1b3c1df-4640-4113-bc4a-05bdb9d34e23.png)
 
 # Task 10: Relese Pipeline
 1. Go to Azure **Pipelines** -> **Releases**, click **+ New** and select **New release pipeline** from the dropdown menu
 ![image](https://user-images.githubusercontent.com/51710476/211897227-7dcb55c9-94ec-46e0-8fc8-b3b28b291d74.png)
-2. ...Select template
+2. From the list of available templates, select **Azure App Service deployment** and click **Apply**
 ![image](https://user-images.githubusercontent.com/51710476/211898868-14ec54c2-ac53-4606-8beb-6ba8cce91b15.png)
 
 3.Fill in fields
