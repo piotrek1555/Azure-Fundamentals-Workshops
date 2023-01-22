@@ -131,7 +131,7 @@ Now you will plan your `Sprint`
 
 # Task 6: Work with Azure Repos - Create Code Repository
 
-1. Go to Azure **Repos**, on the top, expand the AzureFundametnals and select **+ New repository**, name it as it was described in your first task `ecommerce.webapp`, and add `gitignore` **VisualStudio**
+1. Go to Azure **Repos**, on the top, expand the AzureFundametnals and select **+ New repository**, name it as it was described in your first task `ecommerce.webapp`, and add `gitignore` **VisualStudio**, click **Create**
 2. You can go back to your Sprint Task board, and move your task to **Done** column, you have complete your work item task.
 
 # Task 7: Work with Azure Repos - Clone Code Repository
@@ -154,6 +154,11 @@ Now you will plan your `Sprint`
 8. Create new dotnet web app by typing `dotnet new webapp` in terminal
 9. Open it in VS Code
 10. TODO
+
+# Task 8: Create WebApp
+In this task, you will create an Azure App Service Web App. You can use the web app created in previous demo.
+If you don't have one or want to create a new one, follow the instructions in **Task 1** in this manual - [02-App-services](https://github.com/piotrek1555/Azure-Fundamentals-Workshops/blob/main/Instructions/02-App-services/1-Deploy-custom-web-app-to-app-services-in-vs-code.md).
+
 
 # Task 8: Build Pipeline
 1. Go to Azure **Pipelines**, on the top right, click **New pipeline**, click **Use the classic editor** at the bottom
