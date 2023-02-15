@@ -28,7 +28,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal connec
     The next section that we will define is `Instance details` 
 
     ##### Instance details 
-    ![instance-details](/assets/instance-details.PNG)
+    ![instance-details](/assets/instance-dev-details.PNG)
     
     Here you will give the virtual machine a `name` and pick a `region` that you want to deploy the virtual machine in.
 
@@ -131,7 +131,7 @@ In this task, enable the Web Server role on the server on the Virtual Machine yo
   
 3. When completed, a prompt will state **Success** with a value **True**. You do not need to restart the virtual machine to complete the installation. Close the RDP connection to the VM by clicking the **x** on the blue bar at the top center of your virtual machine. 
 
-    ![install-windows-feature](/assets/enable-windows-feature.png)
+    ![install-windows-feature](/assets/enable-windows-feature.PNG)
 
 4. Back in the portal, navigate back to the **Overview** blade of `win-portal-vm` and, use the **Click to clipboard** button to copy the public IP address of `win-portal-vm`, then open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
