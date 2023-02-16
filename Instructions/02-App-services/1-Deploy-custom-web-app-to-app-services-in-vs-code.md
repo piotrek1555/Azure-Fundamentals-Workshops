@@ -47,7 +47,7 @@ In this task you will create custom .net core web app in Visual Studio Code.
 
     ![cmd-in-file-explorer](/assets/cmd-in-file-explorer.PNG)
 
-2. In the terminal window type command `dotnet new webapp -o CustomWebApplication` and hit enter. It should create for you the .net core web application with default template
+2. In the terminal window type command `dotnet new webapp -o CustomWebApplication --framework "net6.0"` and hit enter. It should create for you the .net core web application with default template
 
     ![net-core-new-webapp](/assets/net-core-new-webapp.PNG)
 
